@@ -26,7 +26,7 @@ export default function UniqueSection() {
             <p className="text-gray-600 text-lg leading-relaxed font-medium">
               Você escolhe o melhor momento em 2026 para viajar, e nós cuidamos dos detalhes para que a experiência seja inesquecível.
             </p>
-            <Button className="bg-primary hover:bg-[#A01F24] text-white px-8 py-6 text-sm font-bold uppercase rounded shadow-lg mt-4">
+            <Button className="bg-primary hover:bg-[#be9549] text-white px-8 py-6 text-sm font-bold uppercase rounded shadow-lg mt-4">
               Comece Sua Jornada
             </Button>
           </motion.div>

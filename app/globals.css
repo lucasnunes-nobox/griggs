@@ -8,7 +8,7 @@
   --color-background: hsl(0 0% 100%);
   --color-foreground: hsl(0 0% 0%);
   
-  --color-primary: hsl(358 66% 45%); /* #C1272D */
+  --color-primary: #0b5ea5; 
   --color-primary-foreground: hsl(0 0% 100%);
   
   --color-secondary: hsl(0 0% 0%);
@@ -26,7 +26,7 @@
   --color-border: hsl(0 0% 90%);
   --color-input: hsl(0 0% 90%);
   
-  --color-destructive: hsl(0 62.8% 30.6%);
+  --color-destructive: #be9549;
   --color-destructive-foreground: hsl(0 0% 98%);
 
   --radius-sm: 2px;

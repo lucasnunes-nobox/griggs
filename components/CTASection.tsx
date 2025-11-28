@@ -32,7 +32,7 @@ export default function CTASection() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-            <Button className="bg-primary hover:bg-[#A01F24] text-white px-10 py-7 text-base font-bold uppercase rounded shadow-lg">
+            <Button className="bg-primary hover:bg-[#be9549] text-white px-10 py-7 text-base font-bold uppercase rounded shadow-lg">
               Fale Conosco Agora
             </Button>
             <Button variant="outline" className="border-2 border-white text-white bg-transparent hover:bg-white hover:text-black px-10 py-7 text-base font-bold uppercase rounded">

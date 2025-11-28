@@ -25,7 +25,7 @@ export default function Hero() {
             Viva uma imersão em inglês no campus da Griggs International Academy, pratique o idioma todos os dias e visite Londres, em uma experiência pensada para adultos que querem destravar o inglês com segurança e suporte.
           </p>
           <div className="flex flex-wrap gap-4 pt-4">
-            <Button className="bg-primary hover:bg-[#A01F24] text-white text-sm font-bold px-8 py-6 rounded uppercase tracking-wide shadow-lg hover:translate-y-[-2px] transition-all">
+            <Button className="bg-primary hover:bg-[#be9549] text-white text-sm font-bold px-8 py-6 rounded uppercase tracking-wide shadow-lg hover:translate-y-[-2px] transition-all">
               FALE COM UM CONSULTOR
             </Button>
             <Button variant="outline" className="border-2 border-primary text-primary bg-transparent hover:bg-primary/5 text-sm font-bold px-8 py-6 rounded uppercase tracking-wide">

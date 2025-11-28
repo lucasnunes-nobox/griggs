@@ -10,11 +10,8 @@ export default function Footer() {
           
           {/* Brand Column */}
           <div className="space-y-6">
-            <div className="flex items-center gap-2">
-              <div className="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl">
-                V
-              </div>
-              <span className="font-bold text-xl">Vegira</span>
+            <div className="flex items-center gap-2 w-[120px]">
+               <img width="100%"  src="./logo-griggs.png" alt="Logo Griggs" className="w-[80px] md:w-full"/>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed">
               Simplify Your Journey, Achieve Dreams. Somos consultores profissionais dedicados a tornar seus sonhos de educação internacional uma realidade.
