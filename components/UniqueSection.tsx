@@ -1,9 +1,26 @@
 "use client"
-import Image from "next/image";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
+import { useEffect, useState } from "react";
 
 export default function UniqueSection() {
+  const images = [
+    "/images/new-unique.jpg",
+    "/images/new-unique2.jpg",
+    "/images/new-unique3.jpg",
+    "/images/new-unique4.jpg",
+    "/images/new-unique5.jpg",
+  ];
+
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prev) => (prev + 1) % images.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section className="py-20 bg-white overflow-hidden">
       <div className="container mx-auto px-4 md:px-6">
@@ -33,18 +50,23 @@ export default function UniqueSection() {
 
           {/* Image */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            className="relative h-[400px] md:h-[500px] rounded-2xl overflow-hidden shadow-2xl"
-          >
-            <img 
-              src="/images/student_lifestyle_in_london.png"
-              alt="Student lifestyle in London" 
-              className="w-full h-full object-cover hover:scale-105 transition-transform duration-700"
-            />
-            <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent pointer-events-none"></div>
-          </motion.div>
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              className="relative h-[400px] md:h-[500px] rounded-2xl overflow-hidden shadow-2xl"
+            >
+              <motion.img
+                key={index} // importante pro fade funcionar
+                src={images[index]}
+                alt="Student lifestyle in London"
+                className="w-full h-full object-cover rounded-2xl"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 1 }} // fade suave
+              />
+
+              <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent pointer-events-none"></div>
+            </motion.div>
 
         </div>
       </div>

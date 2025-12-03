@@ -43,7 +43,7 @@ export default function Hero() {
         >
             <div className="absolute inset-0 bg-primary/5 rounded-tl-[100px] rounded-br-[100px] transform rotate-3 scale-95 z-0"></div>
             <img 
-              src="/images/london_university_campus_with_students.png"
+              src="/images/new-hero.jpg"
               alt="Students in London" 
               className="relative z-10 w-full h-full object-cover rounded-tl-[100px] rounded-br-[100px] shadow-xl"
             />

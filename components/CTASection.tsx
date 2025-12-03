@@ -9,7 +9,7 @@ export default function CTASection() {
     <section className="relative py-24 bg-[#1A1A1A] text-white overflow-hidden">
       {/* Background Image Overlay */}
       <div className="absolute inset-0 opacity-10">
-        <img src="/images/professional_travel_consultation.png" alt="Background" className="w-full h-full object-cover grayscale" />
+        <img src="/images/bg-cta.jpg" alt="Background" className="w-full h-full object-cover grayscale" />
       </div>
       
       <div className="container mx-auto px-4 md:px-6 relative z-10 text-center">
@@ -32,10 +32,10 @@ export default function CTASection() {
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-            <Button className="bg-primary hover:bg-[#be9549] text-white px-10 py-7 text-base font-bold uppercase rounded shadow-lg">
+            <Button className="bg-primary hover:bg-[#be9549] text-white px-10 py-7 text-base font-bold uppercase rounded shadow-lg cursor-pointer">
               Fale Conosco Agora
             </Button>
-            <Button variant="outline" className="border-2 border-white text-white bg-transparent hover:bg-white hover:text-black px-10 py-7 text-base font-bold uppercase rounded">
+            <Button variant="outline" className="border-2 border-white text-white bg-transparent hover:bg-white hover:text-black px-10 py-7 text-base font-bold uppercase rounded !hidden">
               Baixar Brochura
             </Button>
           </div>

@@ -2,6 +2,7 @@
 import { motion } from "framer-motion";
 import { CheckCircle2 } from "lucide-react";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 export default function AboutSection() {
   const features = [
@@ -10,6 +11,20 @@ export default function AboutSection() {
     "Parceria Griggs Academy",
     "Imersão para Adultos"
   ];
+
+    const images = [
+      "/images/new-about.jpg",
+      "/images/new-about2.jpg"
+    ];
+  
+    const [index, setIndex] = useState(0);
+  
+    useEffect(() => {
+      const interval = setInterval(() => {
+        setIndex((prev) => (prev + 1) % images.length);
+      }, 5000);
+      return () => clearInterval(interval);
+    }, []);
 
   return (
     <section className="py-20 bg-white">
@@ -24,11 +39,15 @@ export default function AboutSection() {
             className="relative order-2 md:order-1"
           >
             <div className="relative rounded-lg overflow-hidden">
-              <img 
-                src="/images/modern_classroom_interaction.png"
-                alt="Classroom interaction" 
-                className="w-full h-[500px] object-cover"
-              />
+               <motion.img
+                  key={index} // importante pro fade funcionar
+                  src={images[index]}
+                  alt="Student lifestyle in London"
+                  className="w-full h-full object-cover rounded-2xl"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ duration: 1 }} // fade suave
+                />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
               <div className="absolute bottom-0 left-0 p-8 text-white">
                 <p className="text-sm font-bold tracking-wider uppercase mb-2 text-primary">Por que nos escolher</p>
