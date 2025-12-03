@@ -35,7 +35,7 @@ export default function CTASection() {
             <Button className="bg-primary hover:bg-[#be9549] text-white px-10 py-7 text-base font-bold uppercase rounded shadow-lg cursor-pointer">
               Fale Conosco Agora
             </Button>
-            <Button variant="outline" className="border-2 border-white text-white bg-transparent hover:bg-white hover:text-black px-10 py-7 text-base font-bold uppercase rounded !hidden">
+            <Button variant="outline" className="border-2 border-white text-white bg-transparent hover:bg-white hover:text-black px-10 py-7 text-base font-bold uppercase rounded hidden">
               Baixar Brochura
             </Button>
           </div>
